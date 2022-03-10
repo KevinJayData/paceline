@@ -6,7 +6,8 @@ Welcome to my Paceline take home github page.  The overarching goal of this assi
 The goal of the analysis is to determine if the `Increased Rewards` population had any behavioral changes compared to
  the `Control` population regarding how often they claimed their rewards after hitting a weekly streak. 
 
-Don't miss out on the rest of my [profile](https://github.com/KevinJayData) and [website](https://www.kevinjaydata.com/)! 
+Don't miss out on the rest of my [Github profile](https://github.com/KevinJayData) 
+and [website](https://www.kevinjaydata.com/)! 
 
 
 ## How to navigate
