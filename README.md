@@ -1,16 +1,24 @@
 # Paceline Take Home
 
+## How to navigate
+- `app.py` is the main file that runs everything else. Start here. 
+- `graphs.py` shows all of my graphing work. 
+- `graphs_dir/` contains all of my graph outputs
+- `README.md` is what you are looking at now! This will contain all of my written notes, graphs, results, etc...
+- `requirements.txt` provides all package versions for your local virtual env. 
+
+
 ### Sections
-Assumptions
-Exploratory Data Analysis
-KPI
-Population Analysis between Control and Increased Rewards groups
-Graphs
-Results
-Areas for Improvement
+    1. Assumptions
+    2. Exploratory Data Analysis
+    3. KPI
+    4. Population Analysis between Control and Increased Rewards groups
+    5. Graphs
+    6. Results
+    7. Areas for Improvement
 
 
-## Assumptions 
+## 1. Assumptions 
 - Table grain appears to be an aggregation of the week's data for each user. 
 - There are 1000 users across 4 weeks each for 4k rows total. 
 - claimed_reward can only be 1 if hit_steak is 1
@@ -22,7 +30,7 @@ Areas for Improvement
 ![data output example](graphs_dir/data_summary.png)
 
 
-## Exploratory Data Analysis
+## 2. Exploratory Data Analysis
 - There are relatively equal numbers across the claimed_reward variable, 287 rewards were claimed by users across the
  four weeks in the Control group vs 373 in the Increased Rewards group. 
 - 1412 Control users hit the streak and 1821 of the Increased rewards users hit the streak. 
@@ -31,12 +39,12 @@ Areas for Improvement
  unclaimed by Control users while 1448 rewards went unclaimed by the Increased Rewards Users. 
   
 
-## KPI
+## 3. KPI
 - The variable did_not_claim is the variable of interest that this experiment was designed to affect. 
 - Ideally we want to see lower rates of `did_not_claim` in the treatment population.  
 
 
-## Population Analysis between Control and Increased Rewards groups
+## 4. Population Analysis between Control and Increased Rewards groups
 - There were no statistical differences between the Control and Increased Rewards populations.  I suspect no biases
  resulting from population mismatches. 
 - Mean age for both populations was 28 with a stdev of 9, therefore no bias resulting from age. 
@@ -49,7 +57,7 @@ Areas for Improvement
    their rewards more often than the Increased Rewards Group!  
 
 
-## Graphs
+## 5. Graphs
 
 ![days exercised graph](graphs_dir/days_exercised_graph.png)
 - Increased Rewards Group exercised for more minutes than the Control group, but it was not statistically significant. 
@@ -66,7 +74,7 @@ Areas for Improvement
  rewards when they hit a weekly streak.  
 
 
-## Results
+## 6. Results
 - The Increased Rewards group actually forgot to claim their rewards at higher rates than the Control group. 
 - There was zero impact from the install_source on the claim_rate, this indicates that paid_ads might not help the
  did_not_claim KPI but it may help other KPIs like volume.  
@@ -77,7 +85,7 @@ Areas for Improvement
  them to the app and the word of mouth connection makes the user more likely to engage and claim their rewards.  
 
 
-## Areas for Improvement
+## 7. Areas for Improvement
 
 The two biggest areas to improve this analysis are:
 1. Data on the dollar value of the rewards to be claimed. Clearly if someone has a chance to claim $50 in rewards in
