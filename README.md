@@ -1,11 +1,20 @@
 # Paceline Take Home
 
+Welcome to my Paceline take home github page.  The overarching goal of this assignment is to showcase my python
+ progamming, statistical, data visualization, and communication skills. 
+
+The goal of the analysis is to determine if the `Increased Rewards` population had any behavioral changes compared to
+ the `Control` population regarding how often they claimed their rewards after hitting a weekly streak. 
+
+Don't miss out on the rest of my [profile](https://github.com/KevinJayData) and [website](https://www.kevinjaydata.com/)! 
+
+
 ## How to navigate
-- `app.py` is the main file that runs everything else. Start here. 
-- `graphs.py` shows all of my graphing work. 
-- `graphs_dir/` contains all of my graph outputs
 - `README.md` is what you are looking at now! This will contain all of my written notes, graphs, results, etc...
-- `requirements.txt` provides all package versions for your local virtual env. 
+- `app.py` is the main file that runs everything. Start here if you're looking for code. 
+- `graphs.py` shows all of my data visualization work. 
+- `graphs_dir/` contains all of my graph outputs, including some that didn't make it to to the README.
+- `requirements.txt` provides all package versions for your local virtual env if you want to clone this.  
 
 
 ### Sections
@@ -19,13 +28,13 @@
 
 
 ## 1. Assumptions 
-- Table grain appears to be an aggregation of the week's data for each user. 
 - There are 1000 users across 4 weeks each for 4k rows total. 
+- Table grain appears to be an aggregation of the week's data for each user. 
 - claimed_reward can only be 1 if hit_steak is 1
-- When claimed_reward is 0 when hit_streak is 1 indicates a
- "did not claim" week for the user.  In the below screenshot an example of this would be index 0 where userid 415 hit
+- If claimed_reward is 0 and hit_streak is 1 this indicates a `did not claim` week for the user.  
+ In the below screenshot an example of this would be index 0 where userid 415 hit
   their streak but did not claim their rewards.  
-- I am calling this out as its instrumental to the analysis. 
+- I am calling out this `did_not_claim` scenario as its instrumental to the analysis. 
 
 ![data output example](graphs_dir/data_summary.png)
 
