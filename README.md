@@ -50,13 +50,13 @@ and [website](https://www.kevinjaydata.com/)!
   
 
 ## 3. KPI
-- The variable did_not_claim is the variable of interest that this experiment was designed to affect. 
+- The variable `did_not_claim` is the variable of interest that this experiment was designed to affect. 
 - Ideally we want to see lower rates of `did_not_claim` in the treatment population.  
 
 
 ## 4. Population Analysis between Control and Increased Rewards groups
 - There were no statistical differences between the Control and Increased Rewards populations.  I suspect no biases
- resulting from population mismatches. 
+ resulting from population mismatches. I used a t-table to confirm the 95% confidence intervals did not overlap.  
 - Mean age for both populations was 28 with a stdev of 9, therefore no bias resulting from age. 
 - It appears the Increased Rewards population exercised more per week at 347 minutes vs 287 minutes for Control, but
  with standard deviations of 187 and 206 minutes, respectively, these two populations did not exercise for a
@@ -87,7 +87,7 @@ and [website](https://www.kevinjaydata.com/)!
 ## 6. Results
 - The Increased Rewards group actually forgot to claim their rewards at higher rates than the Control group. 
 - There was zero impact from the install_source on the claim_rate, this indicates that paid_ads might not help the
- did_not_claim KPI but it may help other KPIs like volume.  
+ did_not_claim KPI but it may help other KPIs like user acquisition.  
 - Install Source was however correlated with the did_not_claim rate.  Paid Ads were worst across populations for the
  did_not_claim rate.  Meaning those who became users from a paid add are the ones either forgetting to claim, or not
   caring to claim. 
@@ -104,8 +104,8 @@ The two biggest areas to improve this analysis are:
 2. In this analysis, users were assigned to treatment and control groups at the start of the given data set.  An
  ideal way to design the experiment and data would be to provide a previous month of data (like February 2021) where
   all users were all on the control rewards program, and then the March 2021 data where half of the group is in the
-   treatment and half is in the control.  Having that extra month of data would allow us to run a difference-in
-   -difference analysis that controls for any bias in the population.  Difference-in-difference can be computed by
+   treatment and half is in the control.  Having that extra month of data would allow us to run a difference-in-difference 
+   analysis that controls for any bias in the population.  Difference-in-difference can be computed by
     hand or within a regression analysis to better determine the impact of the experiment on the independent variable
      (in this case the did_not_claim variable).  Without this data it is extremely difficult to tell if the claim
       behavior of these two groups was identical or not to begin with.  
